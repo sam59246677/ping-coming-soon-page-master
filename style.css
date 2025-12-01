@@ -1,0 +1,78 @@
+/* Reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 20px;
+  color: hsl(209, 33%, 12%);
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+input[type="email"] {
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid hsl(0, 0%, 59%);
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+input[type="email"].error {
+  border-color: hsl(354, 100%, 66%);
+}
+
+.error-message {
+  color: hsl(354, 100%, 66%);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+button {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: hsl(223, 87%, 50%);
+}
+
+footer {
+  margin-top: 3rem;
+  font-size: 11px;
+  color: hsl(0, 0%, 59%);
+}
+
+footer a { color: hsl(228, 45%, 44%); text-decoration: none; }
